@@ -2,7 +2,7 @@
     "name": "spacecatninja/imager-x-craft-cloud-transformer",
     "description": "Craft Cloud transformer for Imager X",
     "type": "craft-plugin",
-    "version": "1.0.0-beta.1",
+    "version": "1.0.1",
     "license": "MIT",
     "keywords": [
         "craft",
