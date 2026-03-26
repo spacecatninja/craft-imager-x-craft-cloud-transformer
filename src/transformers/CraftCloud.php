@@ -27,6 +27,10 @@ class CraftCloud extends Component implements TransformerInterface
 
     public function transform(Asset|string $image, array $transforms): ?array
     {
+        if (is_string($image)) {
+            throw new ImagerException(Craft::t('imager-x', 'The Craft Cloud transformer can only transform assets, not remote or relative URLs.'));
+        }
+        
         $transformedImages = [];
 
         foreach ($transforms as $transform) {
